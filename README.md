@@ -1,29 +1,12 @@
 
 # AgenticAI Project
 
-This repository contains several Jupyter notebooks demonstrating agentic workflows using LangChain, LangGraph, and OpenAI models. Below is a summary of each file:
+This repository contains Jupyter notebooks demonstrating agentic workflows using LangChain, LangGraph, and OpenAI models:
 
-## Notebooks
+- **conditional_flow.ipynb**: Conditional logic workflows (add/subtract, etc.)
+- **parallel_flow_llm.ipynb**: Parallel execution using LLMs
+- **parallel_flow_wo_llms.ipynb**: Parallel flows for cricket stats (no LLM)
+- **prompt_chain.ipynb**: Blog generation via prompt chaining
+- **chatbot.ipynb**: Agentic chatbot with custom logic
 
-### conditional_flow.ipynb
-Demonstrates conditional logic in agentic workflows. Uses LangChain, LangGraph, and OpenAI to perform operations based on user-defined choices (addition, subtraction, etc.). Includes custom state management and function nodes.
-
-### parallel_flow_llm.ipynb
-Shows parallel execution of tasks using LLMs. Utilizes structured output from OpenAI models and demonstrates how to generate random numbers and manage state in parallel flows.
-
-### parallel_flow_wo_llms.ipynb
-Illustrates parallel flows without LLMs, focusing on cricket statistics calculations (strike rate, balls per boundary, summary) using custom Python functions and state management.
-
-### prompt_chain.ipynb
-Implements a prompt chaining workflow for blog generation. Uses LangChain and OpenAI to create a blog outline and then generate a full blog post based on that outline.
-
-### chatbot.ipynb
-Demonstrates a chatbot implementation using LangChain, LangGraph, and OpenAI. It loads environment variables, sets up a state graph, and uses system/human messages for conversational flows. Useful for building agentic chatbots with custom logic and state management.
-
-## Environment
-
-### .env
-Environment file for storing API keys and configuration variables. Currently empty; add your OpenAI or other API keys as needed.
-
----
-For more details, open each notebook and review the code and comments. These examples are useful for learning agentic workflows, prompt chaining, chatbot logic, and parallel execution with and without LLMs.
+**.env**: Add your API keys here
