@@ -1,7 +1,6 @@
-
 # AgenticAI Project
 
-This repository contains Jupyter notebooks demonstrating agentic workflows using LangChain, LangGraph, and OpenAI models:
+This repository contains Jupyter notebooks demonstrating agentic workflows using LangChain, LangGraph, and OpenAI/Gemini models:
 
 - **conditional_flow.ipynb**: Conditional logic workflows (add/subtract, etc.)
 - **parallel_flow_llm.ipynb**: Parallel execution using LLMs
