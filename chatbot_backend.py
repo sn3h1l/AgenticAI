@@ -27,7 +27,7 @@ checkpoint_saver= InMemorySaver()
 graph.add_node("chat_bot",chat)
 graph.add_edge(START,"chat_bot")
 graph.add_edge("chat_bot",END)
-workflow= graph.compile(checkpointer=checkpoint_saver)
+chatbot= graph.compile(checkpointer=checkpoint_saver)
 
 # while True:
 #     user_input=input("Enter your message (or type 'exit' to quit): ")
