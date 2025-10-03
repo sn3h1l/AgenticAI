@@ -1,6 +1,7 @@
 
 
 
+
 # AgenticAI Project
 
 This repository contains Jupyter notebooks and Python scripts for agentic workflows using LangChain, LangGraph, OpenAI, and Gemini models:
@@ -11,17 +12,17 @@ This repository contains Jupyter notebooks and Python scripts for agentic workfl
 - **parallel_flow_wo_llms.ipynb**: Parallel flows for cricket stats (no LLM)
 - **prompt_chain.ipynb**: Blog generation via prompt chaining
 - **chatbot.ipynb**: Agentic chatbot with custom logic
-- **persistance.ipynb**: Demonstrates state persistence and checkpointing in agentic flows using Gemini and LangGraph.
-- **iterative_flow.ipynb**: Shows iterative logic and state updates in agentic workflows.
+- **persistance.ipynb**: State persistence and checkpointing in agentic flows (Gemini, LangGraph)
+- **iterative_flow.ipynb**: Iterative logic and state updates in agentic workflows
 
 ## Backend
-- **chatbot_backend.py**: Implements the chatbot logic using LangChain, LangGraph, and Gemini (Google Generative AI). Defines a state graph for message handling and response generation. Can be run as a standalone bot or used as a backend for the frontend UI.
+- **chatbot_backend.py**: Chatbot logic using LangChain, LangGraph, and Gemini. Defines a state graph for message handling and response generation. Usable standalone or as backend for UI.
 
 ## Frontend
-- **chatbot_frontend.py**: Streamlit-based UI for the chatbot. Imports the backend workflow, manages chat history, and displays user/assistant messages interactively. Run with `streamlit run chatbot_frontend.py` for a web interface.
+- **chatbot_frontend.py**: Streamlit UI for the chatbot. Imports backend workflow, manages chat history, and displays user/assistant messages. Run with `streamlit run chatbot_frontend.py`.
 
 ## Advanced Chatbot Scripts
-- **streaming_chatbot.py**: Streamlit UI for a chatbot with streaming responses. Uses workflow.stream to display bot replies in real time.
-- **threaded_chatbot.py**: Streamlit UI supporting multiple chat threads. Allows starting new threads and manages chat history per thread.
+- **streaming_chatbot.py**: Streamlit UI for chatbot with streaming responses. Displays bot replies in real time using workflow.stream.
+- **threaded_chatbot.py**: Streamlit UI supporting multiple chat threads. Allows starting new threads, manages chat history per thread, and provides a sidebar for thread control.
 
 **.env**: Add your API keys here
