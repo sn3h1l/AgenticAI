@@ -4,25 +4,29 @@
 
 # AgenticAI Project
 
-This repository contains Jupyter notebooks and Python scripts for agentic workflows using LangChain, LangGraph, OpenAI, and Gemini models:
+Minimal overview of files in this repository:
 
-## Notebooks
-- **conditional_flow.ipynb**: Conditional logic workflows (add/subtract, etc.)
-- **parallel_flow_llm.ipynb**: Parallel execution using LLMs (OpenAI/Gemini)
-- **parallel_flow_wo_llms.ipynb**: Parallel flows for cricket stats (no LLM)
-- **prompt_chain.ipynb**: Blog generation via prompt chaining
-- **chatbot.ipynb**: Agentic chatbot with custom logic
-- **persistance.ipynb**: State persistence and checkpointing in agentic flows (Gemini, LangGraph)
-- **iterative_flow.ipynb**: Iterative logic and state updates in agentic workflows
+Notebooks
+- `chatbot.ipynb` — chatbot example using state graphs
+- `conditional_flow.ipynb` — conditional agent flows
+- `iterative_flow.ipynb` — iterative state updates and loops
+- `parallel_flow_llm.ipynb` — parallel flows with LLMs
+- `parallel_flow_wo_llms.ipynb` — parallel flows without LLMs
+- `persistance.ipynb` — checkpointing and persistence examples
+- `prompt_chain.ipynb` — prompt chaining (blog generation)
 
-## Backend
-- **chatbot_backend.py**: Chatbot logic using LangChain, LangGraph, and Gemini. Defines a state graph for message handling and response generation. Usable standalone or as backend for UI.
+Backend / scripts
+- `chatbot_backend.py` — chatbot state graph and LLM integration (Gemini/OpenAI)
+- `chatbot_backend_database.py` — backend integration with a database (SQLite)
 
-## Frontend
-- **chatbot_frontend.py**: Streamlit UI for the chatbot. Imports backend workflow, manages chat history, and displays user/assistant messages. Run with `streamlit run chatbot_frontend.py`.
+Frontend / apps
+- `chatbot_frontend.py` — simple Streamlit UI
+- `streaming_chatbot.py` — Streamlit UI with streaming responses
+- `threaded_chatbot.py` — Streamlit UI supporting multiple threads
+- `threaded_sqlite_bot.py` — threaded chatbot using SQLite for persistence
 
-## Advanced Chatbot Scripts
-- **streaming_chatbot.py**: Streamlit UI for chatbot with streaming responses. Displays bot replies in real time using workflow.stream.
-- **threaded_chatbot.py**: Streamlit UI supporting multiple chat threads. Allows starting new threads, manages chat history per thread, and provides a sidebar for thread control.
+Other
+- `.env` — environment variables (add API keys)
+- `.gitignore` — repository ignore rules
+- `chatbot.db`*, SQLite files (generated)
 
-**.env**: Add your API keys here
