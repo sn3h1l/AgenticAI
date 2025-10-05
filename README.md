@@ -1,7 +1,4 @@
-
-
-
-
+<!-- ...existing code... -->
 # AgenticAI Project
 
 Minimal overview of files in this repository:
@@ -24,9 +21,4 @@ Frontend / apps
 - `streaming_chatbot.py` — Streamlit UI with streaming responses
 - `threaded_chatbot.py` — Streamlit UI supporting multiple threads
 - `threaded_sqlite_bot.py` — threaded chatbot using SQLite for persistence
-
-Other
-- `.env` — environment variables (add API keys)
-- `.gitignore` — repository ignore rules
-- `chatbot.db`*, SQLite files (generated)
-
+- `langsmith_threadwise_bot.py` — Streamlit thread-based chatbot UI: lists threads, start/reset threads, loads thread history from chatbot_backend_database, and streams assistant responses

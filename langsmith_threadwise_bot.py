@@ -6,6 +6,7 @@ from chatbot_backend_database import retrieve_threads
 import os
 
 os.environ["LANGCHAIN_PROJECT"] = "THREADED_SQLITE_CHATBOT"
+
 #*************** UTILILTY FUNCTIONS *************************
 
 
@@ -77,7 +78,6 @@ for thread_id in st.session_state['chat_threads'][::-1]:
 
 #************************MAIN UI PART*************************
 
-# loading the conversation history
 for message in st.session_state['message_history']:
     with st.chat_message(message['role']):
         st.text(message['content'])
@@ -86,7 +86,6 @@ user_input = st.chat_input('Type here')
 
 if user_input:
 
-    # first add the message to message_history
     st.session_state['message_history'].append({'role': 'user', 'content': user_input})
     with st.chat_message('user'):
         st.text(user_input)
@@ -97,7 +96,6 @@ if user_input:
             'run_name':'chat_turn',
               }
 
-     # first add the message to message_history
     with st.chat_message("assistant"):
         def ai_only_stream():
             for message_chunk, metadata in chatbot.stream(
